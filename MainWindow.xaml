@@ -1,0 +1,17 @@
+﻿<Window x:Class="ExceptionExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExceptionExample"
+        mc:Ignorable="d"
+        Title="Авторизация
+        " Height="300" Width="400">
+    <Grid>
+        <Button Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,167,0,0" Width="110" Click="Button_Click"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Center" Height="26" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.509,0.509"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Center" Height="26" Margin="0,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Label Content="Имя пользователя" HorizontalAlignment="Left" Height="23" Margin="145,10,0,0" VerticalAlignment="Top" Width="127"/>
+        <Label Content="Пароль" HorizontalAlignment="Center" Height="28" Margin="0,69,0,0" VerticalAlignment="Top" Width="54"/>
+    </Grid>
+</Window>
