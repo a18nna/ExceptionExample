@@ -33,11 +33,17 @@ namespace ExceptionExample
             {
                 // Обработка исключения и вывод сообщения пользователю
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                // Логирование ошибки
+                ((App)Application.Current).LogError(ex);
             }
             catch (Exception ex)
             {
                 // Обработка других исключений
                 MessageBox.Show("Произошла непредвиденная ошибка: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                // Логирование ошибки
+                ((App)Application.Current).LogError(ex);
             }
         }
     }
